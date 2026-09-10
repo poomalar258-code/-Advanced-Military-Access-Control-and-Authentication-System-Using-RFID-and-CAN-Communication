@@ -1,4 +1,9 @@
+Absolutely. I checked the README content you provided and kept your **BattleGuard project details, 9-step working principle, components, advantages, applications, and author information**, while fixing the Markdown heading hierarchy and formatting.
+
+Here is the **ready-to-paste `README.md`**:
+
 # 🛡️ BattleGuard
+
 ## Advanced Military Access Control and Authentication System Using RFID and CAN Communication
 
 ---
@@ -11,17 +16,17 @@ The system integrates **RFID authentication, CAN communication, GSM notification
 
 The project demonstrates the practical implementation of:
 
-- Embedded C Programming
-- ARM7 LPC2129
-- UART Communication
-- CAN Communication
-- RFID Interfacing
-- GSM Communication
-- PWM
-- Servo Motor Control
-- LCD Interfacing
-- GPIO
-- Multi-node Embedded System Design
+* Embedded C Programming
+* ARM7 LPC2129
+* UART Communication
+* CAN Communication
+* RFID Interfacing
+* GSM Communication
+* PWM
+* Servo Motor Control
+* LCD Interfacing
+* GPIO
+* Multi-node Embedded System Design
 
 ---
 
@@ -45,16 +50,16 @@ The project demonstrates a practical **distributed multi-node embedded system us
 
 ## 🎯 3. Objectives
 
-- Implement RFID-based authentication.
-- Read RFID data using UART communication.
-- Compare the scanned RFID with a predefined authorized ID.
-- Transfer authentication status using CAN communication.
-- Control a servo motor using PWM.
-- Implement automatic gate opening and closing.
-- Display authentication status using a 20×4 LCD.
-- Provide LED and buzzer alerts for unauthorized access.
-- Send GSM notifications for unauthorized access.
-- Demonstrate multi-node communication using LPC2129.
+* Implement RFID-based authentication.
+* Read RFID data using UART communication.
+* Compare the scanned RFID with a predefined authorized ID.
+* Transfer authentication status using CAN communication.
+* Control a servo motor using PWM.
+* Implement automatic gate opening and closing.
+* Display authentication status using a 20×4 LCD.
+* Provide LED and buzzer alerts for unauthorized access.
+* Send GSM notifications for unauthorized access.
+* Demonstrate multi-node communication using LPC2129.
 
 ---
 
@@ -74,85 +79,86 @@ The project demonstrates a practical **distributed multi-node embedded system us
                                    UART
                                     │
                                     ▼
-              ┌────────────────────────────────────┐
-              │              ECU 1                 │
-              │            LPC2129                │
-              │                                    │
-              │  RFID Authentication               │
-              │  UART Communication                │
-              │  GSM Notification                  │
-              │  CAN Transmission                  │
-              └─────────────────┬──────────────────┘
-                                │
-                                │ CAN BUS
-                    ┌───────────┴───────────┐
-                    │                       │
-                    ▼                       ▼
-          ┌───────────────────┐   ┌───────────────────┐
-          │      ECU 2        │   │      ECU 3        │
-          │     LPC2129       │   │     LPC2129       │
-          │                   │   │                   │
-          │ CAN Reception     │   │ CAN Reception     │
-          │ PWM Control       │   │ 20×4 LCD          │
-          │ Servo Control     │   │ LED + Buzzer      │
-          └─────────┬─────────┘   └───────────────────┘
-                    │
-                    ▼
-             ┌──────────────┐
-             │ Servo Motor  │
-             │ Gate Control │
-             └──────────────┘
+               ┌────────────────────────────────────┐
+               │              ECU 1                 │
+               │             LPC2129                │
+               │                                    │
+               │  RFID Authentication               │
+               │  UART Communication                │
+               │  GSM Notification                  │
+               │  CAN Transmission                  │
+               └─────────────────┬──────────────────┘
+                                 │
+                                 │ CAN BUS
+                       ┌─────────┴─────────┐
+                       │                   │
+                       ▼                   ▼
+             ┌───────────────────┐  ┌───────────────────┐
+             │      ECU 2        │  │      ECU 3        │
+             │     LPC2129       │  │     LPC2129       │
+             │                   │  │                   │
+             │ CAN Reception     │  │ CAN Reception     │
+             │ PWM Control       │  │ 20×4 LCD          │
+             │ Servo Control     │  │ LED + Buzzer      │
+             └─────────┬─────────┘  └───────────────────┘
+                       │
+                       ▼
+                ┌──────────────┐
+                │ Servo Motor  │
+                │ Gate Control │
+                └──────────────┘
+```
 
-
+---
 
 ## 🔧 5. Hardware Components
 
 ### Microcontroller
 
-- LPC2129 ARM7TDMI-S
-- ARM7 microcontroller
-- Built-in CAN controller
-- UART interface
-- PWM generation
-- GPIO
+* LPC2129 ARM7TDMI-S
+* ARM7 microcontroller
+* Built-in CAN controller
+* UART interface
+* PWM generation
+* GPIO
 
 ### RFID Section
 
-- EM-18 RFID Reader
-- RFID Card / RFID Tag
+* EM-18 RFID Reader
+* RFID Card / RFID Tag
 
 ### Communication
 
-- CAN Bus
-- UART
-- GSM Module
+* CAN Bus
+* UART
+* GSM Module
 
 ### Display and Alert
 
-- 20×4 LCD
-- LED
-- Buzzer
+* 20×4 LCD
+* LED
+* Buzzer
 
 ### Gate Control
 
-- Servo Motor
-- PWM Control
+* Servo Motor
+* PWM Control
 
 ### Other Components
 
-- Power Supply
-- Connecting Wires
-- CAN Transceiver / Interface
-- Development Board
+* Power Supply
+* Connecting Wires
+* CAN Transceiver / Interface
+* Development Board
 
 ---
 
 ## 💻 6. Software and Development Tools
 
-- Embedded C
-- Keil µVision
-- ARM7 LPC2129 Development Environment
-- CAN Debugging Tools
+* Embedded C
+* Keil µVision
+* ARM7 LPC2129 Development Environment
+* CAN Debugging Tools
 
 ---
 
@@ -174,7 +180,9 @@ EM-18 RFID Reader
 UART
    ↓
 LPC2129
+```
 
+---
 
 ### Step 2 — RFID Authentication
 
@@ -199,8 +207,9 @@ Compare with Authorized ID
    │         │
    ▼         ▼
  VALID     INVALID
+```
 
-
+---
 
 ### Step 3 — CAN Communication
 
@@ -222,6 +231,9 @@ RFID Authentication
  Servo      LCD
  Motor      LED
  Gate       Buzzer
+```
+
+---
 
 ### Step 4 — Gate Control
 
@@ -232,23 +244,25 @@ CAN Message
      ↓
     ECU2
      ↓
-Check ByteA
+ Check ByteA
      ↓
-┌────┴────┐
-│         │
-0x01     0x02
-│         │
-▼         ▼
+ ┌────┴────┐
+ │         │
+0x01      0x02
+ │         │
+ ▼         ▼
 VALID    INVALID
-│         │
-▼         ▼
+ │         │
+ ▼         ▼
 Servo    Servo
-90°      0°
-│         │
-▼         ▼
+ 90°      0°
+ │         │
+ ▼         ▼
 Gate     Gate
 Open     Closed
+```
 
+---
 
 ### Step 5 — LCD Display
 
@@ -259,35 +273,46 @@ CAN Message
      ↓
     ECU3
      ↓
-Check ByteA
+ Check ByteA
      ↓
-┌────┴────┐
-│         │
-0x01     0x02
-│         │
-▼         ▼
+ ┌────┴────┐
+ │         │
+0x01      0x02
+ │         │
+ ▼         ▼
 VALID    INVALID
-│         │
-▼         ▼
+ │         │
+ ▼         ▼
 ACCESS   ACCESS
 GRANTED  DENIED
+```
 
-##For valid RFID:
+#### For Valid RFID
 
+```text
 VALID RFID
 ACCESS GRANTED
+```
 
-##For invalid RFID:
+#### For Invalid RFID
 
+```text
 INVALID RFID
 ACCESS DENIED
+```
 
-##The LCD also displays the system information during startup.
+#### LCD Startup Information
 
+The LCD also displays the system information during startup.
+
+```text
 BattleGuard: Advance
 MILITARY ACCESS
 RFID AUTHENTICATION
 CAN COMMUNICATION
+```
+
+---
 
 ### Step 6 — Alert System
 
@@ -303,15 +328,19 @@ LCD → ACCESS DENIED
 LED + Buzzer
      ↓
 Security Alert
+```
 
-## GSM module can also send an SMS notification for unauthorized access.
+The GSM module can also send an SMS notification for unauthorized access.
 
+```text
 INVALID RFID
      ↓
 GSM Module
      ↓
 SMS Notification
+```
 
+---
 
 ### Step 7 — Continuous RFID Scanning
 
@@ -327,6 +356,9 @@ UART
 LPC2129
    ↓
 Read Next RFID Tag
+```
+
+---
 
 ### Step 8 — System Monitoring
 
@@ -339,45 +371,52 @@ Authentication
       ↓
 CAN Communication
       ↓
-┌─────┴─────┐
-│           │
-ECU2       ECU3
-│           │
-▼           ▼
-Gate      LCD Display
-Control   + LED + Buzzer
+  ┌─────┴─────┐
+  │           │
+ ECU2        ECU3
+  │           │
+  ▼           ▼
+ Gate      LCD Display
+Control    + LED + Buzzer
+```
+
+---
 
 ### Step 9 — Complete System Operation
 
-The complete BattleGuard system operates as a multi-node authentication and access control system.
+The complete BattleGuard system operates as a multi-node authentication and access-control system.
 
 ```text
-        RFID TAG
-           ↓
-      ┌──────────┐
-      │   ECU1   │
-      │ RFID +   │
-      │ GSM + CAN│
-      └────┬─────┘
-           │
-           │ CAN
-           ▼
-      ┌──────────┐
-      │   ECU2   │
-      │  Servo   │
-      │  Gate    │
-      └──────────┘
+             RFID TAG
+                 ↓
+          ┌──────────┐
+          │   ECU1   │
+          │ RFID +   │
+          │ GSM + CAN│
+          └────┬─────┘
+               │
+               │ CAN
+               ▼
+          ┌──────────┐
+          │   ECU2   │
+          │  Servo   │
+          │  Gate    │
+          └──────────┘
 
-           CAN
-           │
-           ▼
-      ┌──────────┐
-      │   ECU3   │
-      │ LCD +    │
-      │ LED +    │
-      │ Buzzer   │
-      └──────────┘
+               CAN
+                │
+                ▼
+          ┌──────────┐
+          │   ECU3   │
+          │ LCD +    │
+          │ LED +    │
+          │ Buzzer   │
+          └──────────┘
+```
 
+#### Valid RFID Flow
+
+```text
 VALID RFID
     ↓
 Access Granted
@@ -387,7 +426,11 @@ Gate Opens
 LCD Shows VALID RFID
     ↓
 After Delay → Gate Closes
+```
 
+#### Invalid RFID Flow
+
+```text
 INVALID RFID
     ↓
 Access Denied
@@ -397,44 +440,54 @@ Gate Remains Closed
 LCD Shows INVALID RFID
     ↓
 LED / Buzzer Alert
+```
 
-### Advantages
+---
 
-- Provides secure RFID-based authentication.
-- Prevents unauthorized access.
-- Provides fast and automatic access verification.
-- Uses CAN communication for reliable communication between multiple ECUs.
-- Servo motor provides automatic gate opening and closing.
-- LCD displays authentication and access status.
-- LED and buzzer provide visual and audible alerts.
-- Modular multi-node architecture makes the system easy to expand.
-- Reduces the need for manual access verification.
-- Suitable for real-time access control applications.
+## ✅ 8. Advantages
 
-###  Applications
+* Provides secure RFID-based authentication.
+* Prevents unauthorized access.
+* Provides fast and automatic access verification.
+* Uses CAN communication for reliable communication between multiple ECUs.
+* Servo motor provides automatic gate opening and closing.
+* LCD displays authentication and access status.
+* LED and buzzer provide visual and audible alerts.
+* Modular multi-node architecture makes the system easy to expand.
+* Reduces the need for manual access verification.
+* Suitable for real-time access-control applications.
 
-- Military base access control
-- Defence facility security
-- Restricted-area access control
-- Secure laboratory access
-- Government facility security
-- Industrial security systems
-- Railway and metro restricted-area access
-- Warehouse and storage-area security
-- Parking and vehicle access control
-- Smart building access control
+---
 
+## 🎯 9. Applications
 
-### Author
+* Military base access control
+* Defence facility security
+* Restricted-area access control
+* Secure laboratory access
+* Government facility security
+* Industrial security systems
+* Railway and metro restricted-area access
+* Warehouse and storage-area security
+* Parking and vehicle access control
+* Smart building access control
 
-**Poomalar R**  
-B.E. Electrical and Electronics Engineering Graduate  
+---
+
+## 👤 Author
+
+**Poomalar R**
+B.E. Electrical and Electronics Engineering Graduate
 Embedded Systems & Embedded C Aspirant
 
-- LinkedIn: https://linkedin.com/in/poomalar-r-3b6a172b5/
-- GitHub: https://github.com/poomalar258-code/Poomalar-R
-- Email: poomalar258@gmail.com
+* LinkedIn: [https://linkedin.com/in/poomalar-r-3b6a172b5/](https://linkedin.com/in/poomalar-r-3b6a172b5/)
+* GitHub: [https://github.com/poomalar258-code/Poomalar-R](https://github.com/poomalar258-code/Poomalar-R)
+* Email: [poomalar258@gmail.com](mailto:poomalar258@gmail.com)
 
-### License
+---
+
+## 📄 License
 
 This project is developed by **Poomalar R** for educational and academic purposes.
+
+This version fixes the heading hierarchy, so **Hardware Components → Microcontroller** will clearly appear as a main heading followed by a smaller subtitle, and **Advantages / Applications / Author / License** are now separate main sections rather than subsections of Step 9.
