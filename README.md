@@ -488,4 +488,4 @@ Embedded Systems & Embedded C Aspirant
 
 This project is developed by **Poomalar R** for educational and academic purposes.
 
-This version fixes the heading hierarchy, so **Hardware Components → Microcontroller** will clearly appear as a main heading followed by a smaller subtitle, and **Advantages / Applications / Author / License** are now separate main sections rather than subsections of Step 9.
+
