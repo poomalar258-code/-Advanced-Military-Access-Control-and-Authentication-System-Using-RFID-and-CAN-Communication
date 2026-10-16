@@ -4,7 +4,7 @@
 
 ## Advanced Military Access Control and Authentication System Using RFID and CAN Communication
 
-![BattleGuard Project](battleguard.png)
+![BattleGuard Project](BattleGuard%20Embedded%20Access%20Control%20System.png)
 
 ---
 
